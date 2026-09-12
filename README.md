@@ -10,7 +10,7 @@ The solution demonstrates how an organization can move from traditional on-premi
 ### 🏗️ Architecture
 ![Azure Data Engineering Architecture](Azure-data-pipeline/architecture/ETL_Architecture.jpg)
 
-### Architecture Components
+### 🛠️ Architecture Components
 | Components	| Technology | Purpose |
 |---------|---------|---------|
 | Source System | On-Premises SQL Server | Stores raw operational data |
@@ -20,7 +20,7 @@ The solution demonstrates how an organization can move from traditional on-premi
 | Analytical Layer	| Azure Synapse Analytics | Provides SQL-based access to curated Gold data |
 | Visualization |	Power BI | Creates dashboards and business reports |
 
-### Project Objectives
+### 🎯 Project Objectives
 The main objectives of this project were to:
 - Build an end-to-end Azure data engineering pipeline.
 - Integrate an on-premises SQL Server data source with Azure.
