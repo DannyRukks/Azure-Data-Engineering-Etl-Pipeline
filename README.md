@@ -19,3 +19,41 @@ The solution demonstrates how an organization can move from traditional on-premi
 | Data Processing |	Azure Databricks | Cleans, transforms and prepares data |
 | Analytical Layer	| Azure Synapse Analytics | Provides SQL-based access to curated Gold data |
 | Visualization |	Power BI | Creates dashboards and business reports |
+
+### Project Objectives
+The main objectives of this project were to:
+- Build an end-to-end Azure data engineering pipeline.
+- Integrate an on-premises SQL Server data source with Azure.
+- Implement automated cloud data ingestion using Azure Data Factory.
+- Build a structured data lake using Azure Blob Storage.
+- Implement Bronze, Silver and Gold data layers.
+- Perform scalable data transformation using Azure Databricks.
+- Create business-ready analytical datasets.
+- Expose curated data through Azure Synapse Analytics.
+- Create SQL views for reporting consumption.
+- Build interactive dashboards using Power BI.
+
+### 🥉 Bronze Layer — Raw Data
+The first stage of the pipeline is the Bronze Layer. Azure Data Factory extracts the datasets from the on-premises SQL Server environment and loads them into Azure Blob Storage. The Bronze layer represents the raw landing zone of the data. The layer:
+- Ingest data from the source system
+- Preserve the original source data
+- Store data in the cloud
+- Provide a historical/raw copy of the source
+- Separate ingestion from downstream transformation
+
+### 🥈 Silver Layer — Cleaned and Transformed Data
+After the raw datasets are loaded into the Bronze layer, Azure Databricks is used to process and transform the data. The transformed datasets are stored in the Silver Layer in Azure Blob Storage. The Silver layer contains data that has been cleaned, standardized and prepared for further analytical processing. The Databricks transformation process includes:
+- Data cleansing
+- Data type standardization
+- Column renaming
+- Filtering invalid records
+- Standardizing formats
+- Creating derived columns
+
+### 🥇 Gold Layer — Business-Ready Data
+The Gold layer represents the final curated data layer. After the Silver datasets have been cleaned and transformed, Azure Databricks applies the required business logic to create analytics-ready datasets. The Gold layer is optimized for downstream analytical consumption.
+
+### 📈 Power BI Reporting
+The final layer of the architecture is Microsoft Power BI. Power BI connects to the analytical views exposed through Azure Synapse Analytics. The curated data is then used to build interactive dashboards and reports. The dashboard is shown below:
+![Azure ETL Architecture](Azure-data-pipeline/dashboard/Analysis_dashboard.jpg)
+
