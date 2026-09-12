@@ -9,3 +9,13 @@ The solution demonstrates how an organization can move from traditional on-premi
 
 ### 🏗️ Architecture
 ![Azure Data Engineering Architecture](Azure-data-pipeline/architecture/ETL_Architecture.jpg)
+
+### Architecture Components
+| Components	| Technology | Purpose |
+|---------|---------|---------|
+| Source System | On-Premises SQL Server | Stores raw operational data |
+| Data Ingestion	| Azure Data Factory | Extracts data from SQL Server and loads it into Azure |
+| Data Lake	|Azure Blob Storage | Stores Bronze, Silver and Gold datasets |
+| Data Processing |	Azure Databricks | Cleans, transforms and prepares data |
+| Analytical Layer	| Azure Synapse Analytics | Provides SQL-based access to curated Gold data |
+| Visualization |	Power BI | Creates dashboards and business reports |
