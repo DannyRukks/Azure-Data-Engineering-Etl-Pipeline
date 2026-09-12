@@ -6,3 +6,6 @@ This project demonstrates the design and implementation of an **end-to-end cloud
 The project follows a **modern Medallion Architecture**, consisting of **Bronze, Silver, and Gold data layers.** Azure Data Factory is used for data ingestion, Azure Blob Storage serves as the cloud data lake, Azure Databricks performs data transformation and processing, Azure Synapse Analytics provides the analytical serving layer, and Power BI is used for business intelligence and reporting.
 
 The solution demonstrates how an organization can move from traditional on-premises data storage to a scalable cloud-based data platform while maintaining a structured and efficient data processing workflow.
+
+### 🏗️ Architecture
+![Azure Data Engineering Architecture](Azure-data-pipeline/architecture/ETL_Architecture.jpg)
