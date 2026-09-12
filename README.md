@@ -55,5 +55,23 @@ The Gold layer represents the final curated data layer. After the Silver dataset
 
 ### 📈 Power BI Reporting
 The final layer of the architecture is Microsoft Power BI. Power BI connects to the analytical views exposed through Azure Synapse Analytics. The curated data is then used to build interactive dashboards and reports. The dashboard is shown below:
+
 ![Azure ETL Architecture](Azure-data-pipeline/dashboard/Analysis_dashboard.jpg)
+
+### 👨‍💻 Skills Demonstrated
+Through this project, I demonstrated my ability to design and implement an end-to-end data engineering solution using Microsoft Azure.
+
+The project covers the complete data lifecycle, from **on-premises data extraction through cloud ingestion, data lake storage, distributed transformation, analytical serving and business intelligence reporting.**
+
+#### Core Skills
+
+Azure Data Engineering | ETL | Data Lakes | Azure Data Factory | Azure Blob Storage | Azure Databricks | PySpark | SQL | Azure Synapse Analytics | Power BI | Data Transformation | Data Modeling | Medallion Architecture | Business Intelligence
+
+### ⭐ Conclusion
+
+This project represents a practical implementation of a modern Azure data engineering architecture.
+
+By combining **Azure Data Factory for ingestion, Azure Blob Storage for data lake storage, Azure Databricks for transformation, Azure Synapse Analytics for analytical serving, and Power BI for visualization,** the solution demonstrates how data can be transformed from raw operational information into actionable business insights.
+
+The architecture is designed around scalability, maintainability, separation of responsibilities and efficient analytical consumption.
 
